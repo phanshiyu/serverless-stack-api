@@ -1,1 +1,7 @@
-{}
+{
+  "requestContext": {
+    "identity": {
+      "cognitoIdentityId": "cc4518c7-8273-41e9-ad80-cc51c055666a"
+    }
+  }
+}

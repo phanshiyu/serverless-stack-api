@@ -13,7 +13,7 @@ export const main: APIGatewayProxyHandler = handler(async (event, context) => {
 
   const item: DocumentClient.PutItemInputAttributeMap = {
     // The attributes of the item to be created
-    userId: "123",
+    userId: event.requestContext.identity.cognitoIdentityId,
     // The id of the author
     noteId: uuid.v1(), // A unique uuid
     content: data.content,
